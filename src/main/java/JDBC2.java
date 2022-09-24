@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class JDBC2 {
     public static void main(String[] arg) throws Exception {
         // Incorporate mySQL driver
-        Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         // Connect to the test database
         Connection connection = DriverManager.getConnection("jdbc:" + Parameters.dbtype + ":///" + Parameters.dbname + "?autoReconnect=true&useSSL=false",
